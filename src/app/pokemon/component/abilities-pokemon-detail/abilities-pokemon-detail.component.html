@@ -1,0 +1,19 @@
+<p>
+  <b>
+    <span class="material-icons">construction</span>Habilidades
+  </b>
+</p>
+<div *ngFor="let abilities of abilityDetail">
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <b>{{abilities.names[languagesCode.englishLanguage].name}}</b>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      {{abilities.effect_entries[languagesCode.englishEffect].effect}}
+    </mat-expansion-panel>
+  </mat-accordion>
+  <span class="space"></span>
+</div>
+<ngx-ui-loader bgsColor="#f44336" fgsColor="#f44336" pbColor="#f44336"></ngx-ui-loader>

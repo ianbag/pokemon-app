@@ -1,0 +1,42 @@
+<div class="container" fxLayout="row">
+  <div fxFlex="33" fxLayoutAlign="left center">
+    <button mat-button [routerLink]="['/']">
+      <i class="material-icons md-48">arrow_back</i> Voltar
+    </button>
+  </div>
+  <div fxFlex="33" fxLayoutAlign="center center">
+    <h1 class="header">{{pokemonDetail?.name}}</h1>
+  </div>
+</div>
+<div class="pokemon-content" fxLayout="row wrap" fxLayoutAlign="space-evenly center">
+  <mat-card class="card-pokemon">
+    <mat-card-header>
+      <div fxLayout="row">
+        <div fxLayout="column">
+          <mat-card-title>Detalhes do {{pokemonDetail?.name}}</mat-card-title>
+          <mat-card-subtitle>#{{pokemonDetail?.id}}</mat-card-subtitle>
+        </div>
+      </div>
+    </mat-card-header>
+    <mat-card-content fxLayout="row wrap" fxLayoutAlign="space-evenly">
+      <div class="card-sprites">
+        <app-sprites-pokemon-detail [pokemonDetail]="pokemonDetail"></app-sprites-pokemon-detail>
+      </div>
+      <div class="card-infos">
+        <div fxLayoutAlign="left center">
+          <p><b><i class="material-icons">emoji_events</i> Experiência base:</b> {{pokemonDetail?.base_experience}}
+          </p>
+        </div>
+        <div fxLayoutAlign="left center">
+          <p><b><i class="material-icons">fitness_center</i> Peso:</b> {{pokemonDetail?.weight}}</p>
+        </div>
+        <div fxLayoutAlign="left center">
+          <p><b><i class="material-icons">height</i> Altura:</b> {{pokemonDetail?.height}}</p>
+        </div>
+      </div>
+      <div class="card-abilities">
+        <app-abilities-pokemon-detail [pokemonDetail]="pokemonDetail"></app-abilities-pokemon-detail>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

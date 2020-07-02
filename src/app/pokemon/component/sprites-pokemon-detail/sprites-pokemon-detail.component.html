@@ -1,0 +1,29 @@
+<div *ngIf="pokemonDetail?.sprites.front_default">
+  <h5 class="text-center">Gênero Masculino</h5>
+  <span class="text-small badge dark-warn">Forma Normal</span>
+  <div fxLayout="row">
+    <img class="image-pokemon" src="{{pokemonDetail?.sprites?.front_default}}" alt="{{pokemonDetail?.name}}">
+    <img class="image-pokemon" src="{{pokemonDetail?.sprites?.back_default}}" alt="{{pokemonDetail?.name}}">
+  </div>
+  <span class="text-small badge warn">Forma Brilhante</span>
+  <div fxLayout="row">
+    <img class="image-pokemon" src="{{pokemonDetail?.sprites?.front_shiny}}" alt="{{pokemonDetail?.name}}">
+    <img class="image-pokemon" src="{{pokemonDetail?.sprites?.back_shiny}}" alt="{{pokemonDetail?.name}}">
+  </div>
+</div>
+<div *ngIf="pokemonDetail?.sprites.front_female">
+  <hr>
+  <h5 class="text-center">Gênero Feminino</h5>
+  <span class="text-small badge dark-warn">Forma Normal</span>
+  <div fxLayout="row">
+    <img class="image-pokemon" src="{{pokemonDetail?.sprites?.front_female}}" alt="{{pokemonDetail?.name}}">
+    <img class="image-pokemon" src="{{pokemonDetail?.sprites?.back_female}}" alt="{{pokemonDetail?.name}}">
+  </div>
+  <span class="text-small badge warn">Forma Brilhante</span>
+  <div fxLayout="row">
+    <img class="image-pokemon" matBadge="7" src="{{pokemonDetail?.sprites?.front_shiny_female}}"
+      alt="{{pokemonDetail?.name}}">
+    <img class="image-pokemon" src="{{pokemonDetail?.sprites?.back_shiny_female}}"
+      alt="{{pokemonDetail?.name}}">
+  </div>
+</div>

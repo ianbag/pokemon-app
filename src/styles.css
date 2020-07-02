@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.dark-warn {
+  background-color: #aa2e25;
+  color: #fff;
+}
+
+.warn {
+  background-color: #f44336;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+mat-card-title,
+h1.header {
+  text-transform: capitalize;
+}

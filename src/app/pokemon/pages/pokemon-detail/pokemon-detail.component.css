@@ -1,0 +1,21 @@
+.card-pokemon {
+  margin-top: 50px;
+  width: 80%;
+  min-height: 150px;
+}
+
+.image-pokemon {
+  width: auto;
+  height: auto;
+}
+
+.card-sprites {
+  min-width: 200px;
+}
+.card-infos {
+  min-width: 150px;
+}
+.card-abilities {
+  min-width: 40%;
+  max-width: 55%;
+}
